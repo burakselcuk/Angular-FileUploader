@@ -1,8 +1,8 @@
-Angular file uploader is an Angular 2+ file uploader module with Real-Time Progress Bar and Angular Universal Compatibility.
+Angular file uploader is an Angular 2/4/5 file uploader module with Real-Time Progress Bar and Angular Universal Compatibility.
 
 ### Install
 ```
-npm install angular-file-uploader
+npm i angular-file-uploader
 ```
 ### Usage
 - Bootstrap.min.css is required.
@@ -57,7 +57,8 @@ npm install angular-file-uploader
        "Authorization" : `Bearer ${token}`
         }
       },
-      hideProgressBar: "true"
+      hideProgressBar: "true",
+      hideResetBtn: "true",
   };
   ``` 
 
@@ -76,6 +77,7 @@ npm install angular-file-uploader
 | uploadAPI.url : string     | Complete api url to which you want to upload.                                                                                                                                         | undefined                              |
 | uploadAPI.headers : {}     | Provide headers you need here.                                                                                                                                                        | {}                              |
 | hideProgressBar:boolean    | Set it as " true " to hide the Progress bar. | false |
+| hideResetBtn:boolean       | Set it as " true " to hide the Reset Button. | false |
 
 ---
 ##### A Better Way to reset the module
@@ -114,6 +116,8 @@ You have seen that by using 'resetUpload' property, you can reset the module eas
 - Drag n Drop.
 - More customization options.
 
+---
+---
 #### For Versions < 2.x :
 ##### Example-1
   ```html
